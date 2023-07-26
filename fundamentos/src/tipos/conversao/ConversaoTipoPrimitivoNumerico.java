@@ -1,3 +1,5 @@
+package tipos.conversao;
+
 public class ConversaoTipoPrimitivoNumerico {
 
     public static void main(String[] args) {
