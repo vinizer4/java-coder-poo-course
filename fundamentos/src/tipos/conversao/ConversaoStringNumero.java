@@ -1,3 +1,5 @@
+package tipos.conversao;
+
 import javax.swing.*;
 
 public class ConversaoStringNumero {

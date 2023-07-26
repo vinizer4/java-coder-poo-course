@@ -1,3 +1,5 @@
+package utilitarios;
+
 public class NotacaoPonto {
 
     public static void main(String[] args) {

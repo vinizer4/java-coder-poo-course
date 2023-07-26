@@ -1,10 +1,12 @@
+package tipos;
+
 import java.util.Scanner;
 
 public class Wrapper {
 
     public static void main(String[] args) {
 
-        // Wrapper dos tipos primitivos para numbers
+        // tipos.Wrapper dos tipos primitivos para numbers
         Byte b = 100;
         Short s = 1000;
         Integer i = 10000;
@@ -19,12 +21,12 @@ public class Wrapper {
         System.out.println(f);
         System.out.println(d);
 
-        // Wrapper para boolean
+        // tipos.Wrapper para boolean
         Boolean bo = Boolean.parseBoolean("true");
         System.out.println(bo);
         System.out.println(bo.toString().toUpperCase());
 
-        // Wrapper caracteres
+        // tipos.Wrapper caracteres
         Character c = '#';
         System.out.println(c + "...");
     }
