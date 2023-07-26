@@ -34,5 +34,10 @@ public class Logicos {
         System.out.println(true ^ false); // true
         System.out.println(false ^ true); // true
         System.out.println(false ^ false); // false
+
+        // Tabela verdade NOT
+        System.out.println("\nTabela verdade NOT");
+        System.out.println(!true);
+        System.out.println(!false);
     }
 }
