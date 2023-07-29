@@ -2,7 +2,7 @@ package controle.estruturas.loops;
 
 public class For {
 
-    public static void exemplo1(String[] args) {
+    public static void main(String[] args) {
 
 
         for(int contador = 0; contador <= 20; contador+=2) {
@@ -24,6 +24,6 @@ public class For {
 //            System.out.println("Fim!");
 //        }
 
-
     }
+
 }
