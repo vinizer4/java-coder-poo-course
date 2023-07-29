@@ -1,4 +1,4 @@
-package controle;
+package controle.estruturas.condicionais;
 
 import java.util.Scanner;
 
