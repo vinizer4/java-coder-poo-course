@@ -1,4 +1,4 @@
-package controle.estruturas.loops;
+package estruturas_de_controle.estruturas.loops;
 
 public class ContinueRotulado {
 

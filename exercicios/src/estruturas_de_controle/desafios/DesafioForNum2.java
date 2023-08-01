@@ -1,4 +1,4 @@
-package controle.desafios;
+package estruturas_de_controle.desafios;
 
 public class DesafioForNum2 {
 
