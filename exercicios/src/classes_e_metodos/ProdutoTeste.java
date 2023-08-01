@@ -9,7 +9,7 @@ public class ProdutoTeste {
         // instanciando objeto produto do classe molde Produto
         Produto p1 = new Produto();
         p1.nome = "Notebook";
-        p1.preco = 4356.89;
+        p1.preco = 5000;
         p1.desconto = 0.25;
 
         var p2 = new Produto();
@@ -21,9 +21,16 @@ public class ProdutoTeste {
         System.out.println(p2.nome);
 
         double precoFinal1 = p1.preco * (1 - p1.desconto);
+        double precoFinalMetodo = p1.precoComDesconto();
+        double precoDescontoGerente = p1.precoComDescontoGerente(0.20);
+
+        System.out.println(precoFinal1);
+        System.out.println(precoFinalMetodo);
+        System.out.println(precoDescontoGerente);
+
         double precoFinal2 = p2.preco * (1 - p2.desconto);
 
-       double mediaCarrinho = (precoFinal1 + precoFinal2) / 2;
+        double mediaCarrinho = (precoFinal1 + precoFinal2) / 2;
 
         System.out.printf("Media carrinho = R$%.2f.", mediaCarrinho);
     }
