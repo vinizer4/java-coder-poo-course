@@ -1,4 +1,4 @@
-package controle.estruturas.condicionais;
+package estruturas_de_controle.estruturas.condicionais;
 
 import javax.swing.*;
 
