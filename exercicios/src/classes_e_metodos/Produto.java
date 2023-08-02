@@ -5,7 +5,7 @@ public class Produto {
 
     String nome;
     double preco;
-    double desconto;
+    static double desconto = 0.25;
 
     // Construtor padrao
     Produto() {}
@@ -18,16 +18,6 @@ public class Produto {
     Produto(String nomeInicial, double precoInicial) {
         this.nome = nomeInicial;
         this.preco = precoInicial;
-    }
-
-    Produto(
-            String nomeInicial,
-            double precoInicial,
-            double descontoInicial
-    ) {
-        this.nome = nomeInicial;
-        this.preco = precoInicial;
-        this.desconto = descontoInicial;
     }
 
     double precoComDesconto() {
