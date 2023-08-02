@@ -1,4 +1,4 @@
-package classes_e_metodos;
+package classes_e_metodos.desafios;
 
 public class PrimeiroTrauma {
 
