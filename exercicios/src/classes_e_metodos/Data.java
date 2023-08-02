@@ -20,7 +20,10 @@ public class Data {
     }
 
     String obterDataFormatada() {
-        return String.format("%d/%d/%d", dia, mes, ano);
+        // variavel local que foi definida dentro do escopo do metodo
+        // ela nao e acessivel em outros escopos somente no escopo do metodo que foi definida
+        final String FORMATO = "%d/%d/%d";
+        return String.format(FORMATO, dia, mes, ano);
     }
 
     void imprimirDataFormatada() {
