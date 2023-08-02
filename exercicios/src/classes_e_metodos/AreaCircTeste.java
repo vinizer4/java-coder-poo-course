@@ -11,5 +11,7 @@ public class AreaCircTeste {
         System.out.println(a1.area());
         System.out.println(a2.area());
         System.out.println(AreaCirc.PI);
+
+        System.out.println(AreaCirc.areaWithRaioParam(5));
     }
 }
