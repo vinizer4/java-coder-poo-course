@@ -7,7 +7,10 @@ public class ProdutoTeste {
     public static void main(String[] args) {
 
         // instanciando objeto produto do classe molde Produto
-        Produto p1 = new Produto("Notebook", 4356.89);
+        Produto p1 = new Produto(
+                "Notebook",
+                4356.89
+        );
         //p1.nome = "Notebook";
         //p1.preco = 5000;
         //p1.desconto = 0.25;
