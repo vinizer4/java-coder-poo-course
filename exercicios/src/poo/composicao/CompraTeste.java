@@ -11,5 +11,14 @@ public class CompraTeste {
         compra1.adicionarItem(new Item("Caderno", 3, 18.79));
 
         System.out.println(compra1.itens.size());
+        System.out.println(compra1.obterValorTotal());
+
+        // Só para exemplificar a bidirecionalidade
+        double total = compra1.itens.get(0).compra.
+                itens.get(1).compra.obterValorTotal();
+
+        System.out.println("O total é R$ " + total);
+
+        // System.out.println(compra1.itens.get(0).compra.itens.get(1).compra.cliente);
     }
 }
