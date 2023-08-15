@@ -1,4 +1,4 @@
-package poo.composicao;
+package poo.composicao.umparamuitos;
 
 public class CompraTeste {
 

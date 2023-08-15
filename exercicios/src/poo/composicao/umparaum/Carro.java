@@ -1,4 +1,6 @@
-package poo.composicao;
+package poo.composicao.umparaum;
+
+import poo.composicao.umparaum.Motor;
 
 public class Carro {
 
