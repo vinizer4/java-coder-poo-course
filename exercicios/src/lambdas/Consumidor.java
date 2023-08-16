@@ -1,5 +1,7 @@
 package lambdas;
 
+import lambdas.Produto;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
