@@ -1,27 +1,68 @@
 package poo.heranca.desafio;
 
-public class Ferrari extends Carro{
+public class Ferrari extends Carro implements Esportivo, Luxo {
+
+    private boolean ligarTurbo = false;
+    private boolean ligarAr = false;
 
     public Ferrari() {
         this(315);
     }
 
-    Ferrari(int velocidadeMaxima) {
+    public Ferrari(int velocidadeMaxima) {
         super(velocidadeMaxima);
-        delta = 15;
+        setDelta(15);
+    }
+
+//    @Override
+//    public void acelerar() {
+//        velocidadeAtual += 15;
+//    }
+
+//    @Override
+//    public void frear() {
+//        if (velocidadeAtual < 15) {
+//            velocidadeAtual = 0;
+//        } else {
+//            velocidadeAtual -= 15;
+//        }
+//    }
+
+    @Override
+    public void ligarTurbo() {
+        ligarTurbo = true;
     }
 
     @Override
-    public void acelerar() {
-        velocidadeAtual += 15;
+    public void desligarTurbo() {
+        ligarTurbo = false;
     }
 
     @Override
-    public void frear() {
-        if (velocidadeAtual < 15) {
-            velocidadeAtual = 0;
-        } else {
-            velocidadeAtual -= 15;
+    public void ligarAr() {
+        ligarAr = true;
+    }
+
+    @Override
+    public void desligarAr() {
+       ligarAr = false;
+    }
+
+    @Override
+    public int velocidadeDoAr() {
+        return 1;
+    }
+
+    @Override
+    public int getDelta() {
+        if (ligarTurbo && !ligarAr) {
+            return 35;
+        } else if (ligarTurbo) {
+            return 30;
+        } else if (!ligarAr) {
+            return 20;
         }
+        return 15;
     }
+
 }
