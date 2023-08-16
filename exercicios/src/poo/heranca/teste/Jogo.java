@@ -1,4 +1,8 @@
-package poo.heranca;
+package poo.heranca.teste;
+
+import poo.heranca.Direcao;
+import poo.heranca.Heroi;
+import poo.heranca.Monstro;
 
 public class Jogo {
 
