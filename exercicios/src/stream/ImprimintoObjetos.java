@@ -30,8 +30,8 @@ public class ImprimintoObjetos {
         }
 
         System.out.println("\nUsando o Stream...");
-        Stream<String> stream = aprovados.stream();
+        Stream<String> stream = aprovados.stream(); // Cria um fluxo de dados (stream)
 
-        stream.forEach(System.out::println);
+        stream.forEach(System.out::println); // Imprime os elementos do fluxo de dados (stream)
     }
 }
