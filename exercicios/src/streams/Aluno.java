@@ -1,4 +1,4 @@
-package stream;
+package streams;
 
 public class Aluno {
 
@@ -14,5 +14,10 @@ public class Aluno {
         this.nome = nome;
         this.nota = nota;
         this.bomComportamento = bomComportamento;
+    }
+
+    @Override
+    public String toString() {
+        return nome + " tem nota " + nota;
     }
 }

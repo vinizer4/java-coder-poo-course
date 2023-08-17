@@ -1,4 +1,4 @@
-package stream;
+package streams;
 
 import java.util.List;
 import java.util.function.Predicate;
