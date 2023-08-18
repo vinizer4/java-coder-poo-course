@@ -1,4 +1,4 @@
-package excecao.personalizadaA;
+package excecao.personalizadaB;
 
 import excecao.Aluno;
 
@@ -11,11 +11,10 @@ public class TesteValidacoes {
             Validar.aluno(aluno);
 
             Validar.aluno(null);
-        } catch (StringVaziaException e) {
-            System.out.println(e.getMessage());
-        } catch (NumeroForaIntervaloException | IllegalArgumentException e) {
+        } catch (StringVaziaException | NumeroForaIntervaloException | IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
+
 
         System.out.println("Fim :)");
     }

@@ -1,4 +1,4 @@
-package excecao.personalizadaA;
+package excecao.personalizadaB;
 
 import excecao.Aluno;
 
@@ -6,8 +6,7 @@ public class Validar {
 
     private Validar() {}
 
-    public static void aluno(Aluno aluno)
-            throws StringVaziaException, NumeroForaIntervaloException {
+    public static void aluno(Aluno aluno) {
 
         if (aluno == null) {
             throw new IllegalArgumentException("O aluno está nulo");
