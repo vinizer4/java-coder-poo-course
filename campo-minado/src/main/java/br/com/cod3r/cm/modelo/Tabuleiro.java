@@ -1,5 +1,7 @@
 package br.com.cod3r.cm.modelo;
 
+import br.com.cod3r.cm.excecao.ExplosaoException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
@@ -20,6 +22,25 @@ public class Tabuleiro {
         gerarCampos();
         associarOsVizinhos();
         sortearMinas();
+    }
+
+    public void abrir(int linha, int coluna) {
+        try {
+            campos.parallelStream()
+                    .filter(campo -> campo.getLinha() == linha && campo.getColuna() == coluna)
+                    .findFirst()
+                    .ifPresent(campo -> campo.abrir());
+        } catch (ExplosaoException e) {
+            campos.forEach(campo -> campo.setAberto(true));
+            throw e;
+        }
+    }
+
+    public void alternarMarcacao(int linha, int coluna) {
+        campos.parallelStream()
+                .filter(campo -> campo.getLinha() == linha && campo.getColuna() == coluna)
+                .findFirst()
+                .ifPresent(campo -> campo.alternarMarcacao());
     }
 
     private void gerarCampos() {
@@ -59,5 +80,21 @@ public class Tabuleiro {
     }
 
 
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+
+        int i = 0;
+        for (int linha = 0; linha < linhas; linha++) {
+            for (int coluna = 0; coluna < colunas; coluna++) {
+                sb.append(" ");
+                sb.append(campos.get(i));
+                sb.append(" ");
+                i++;
+            }
+            sb.append("\n");
+        }
+
+        return sb.toString();
+    }
 
 }

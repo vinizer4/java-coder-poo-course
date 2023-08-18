@@ -113,6 +113,10 @@ public class Campo {
         return minado;
     }
 
+    public void setAberto(boolean aberto) {
+        this.aberto = aberto;
+    }
+
     public String toString() {
         if (marcado) {
             return "x";
