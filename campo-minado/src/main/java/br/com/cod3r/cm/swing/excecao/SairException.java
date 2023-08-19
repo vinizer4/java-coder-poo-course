@@ -1,4 +1,4 @@
-package br.com.cod3r.cm.excecao;
+package br.com.cod3r.cm.swing.excecao;
 
 public class SairException extends RuntimeException {
 
