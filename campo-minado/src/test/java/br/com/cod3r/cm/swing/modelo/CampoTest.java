@@ -1,6 +1,6 @@
-package br.com.cod3r.cm.modelo;
+package br.com.cod3r.cm.swing.modelo;
 
-import br.com.cod3r.cm.excecao.ExplosaoException;
+import br.com.cod3r.cm.swing.excecao.ExplosaoException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

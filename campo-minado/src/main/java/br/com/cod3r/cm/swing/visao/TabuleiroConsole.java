@@ -1,8 +1,8 @@
-package br.com.cod3r.cm.visao;
+package br.com.cod3r.cm.swing.visao;
 
-import br.com.cod3r.cm.excecao.ExplosaoException;
-import br.com.cod3r.cm.excecao.SairException;
-import br.com.cod3r.cm.modelo.Tabuleiro;
+import br.com.cod3r.cm.swing.excecao.ExplosaoException;
+import br.com.cod3r.cm.swing.excecao.SairException;
+import br.com.cod3r.cm.swing.modelo.Tabuleiro;
 
 import java.util.Arrays;
 import java.util.Iterator;
