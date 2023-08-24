@@ -1,4 +1,4 @@
-package br.com.cod3r;
+package br.com.cod3r.calc;
 
 public class Main {
     public static void main(String[] args) {
