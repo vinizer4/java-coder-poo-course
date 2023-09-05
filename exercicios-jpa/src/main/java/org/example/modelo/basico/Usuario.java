@@ -1,13 +1,15 @@
-package basic;
+package org.example.modelo.basico;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class Usuario {
 
     @Id
-    private long id;
+    @GeneratedValue
+    private Long id;
     private String nome;
     private String email;
 
@@ -19,11 +21,11 @@ public class Usuario {
         this.email = email;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
