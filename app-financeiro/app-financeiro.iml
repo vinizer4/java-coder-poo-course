@@ -7,6 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="app-calculo" exported="" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="7b2245ac-586c-4cc8-ba3f-5e1210731962" />
