@@ -7,9 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="app.logging" exported="" />
   </component>
   <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="75263b6d-ffed-44fb-820c-fb0f14878276" />
+    <option name="uniqueId" value="ac1fbe57-3df7-4188-b86f-97846e34919a" />
   </component>
 </module>
