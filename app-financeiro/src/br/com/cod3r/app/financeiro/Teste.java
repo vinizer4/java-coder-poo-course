@@ -1,6 +1,7 @@
 package br.com.cod3r.app.financeiro;
 
 import br.com.cod3r.app.calculo.Calculadora;
+import br.com.cod3r.app.calculo.interno.OperacoesAritmeticas;
 
 public class Teste {
 
@@ -10,6 +11,8 @@ public class Teste {
 
         System.out.println(calc.soma(2, 3, 4));
 
-        System.out.println(calc.getLoggerClass());
+        OperacoesAritmeticas op = new OperacoesAritmeticas();
+
+        System.out.println(op.soma(2, 3, 4));
     }
 }
