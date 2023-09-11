@@ -1,10 +1,7 @@
 package com.example.springbootexercicios.controllers;
 
 import com.example.springbootexercicios.models.Cliente;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path = "/cliente")
@@ -17,6 +14,12 @@ public class ClienteController {
 
     @GetMapping("/{id}")
     public Cliente obterClientePorId(@PathVariable int id) {
+        return new Cliente(id, "Fulano", "123.456.789-00");
+    }
+
+    @GetMapping
+    public Cliente obterClientePorId2(
+            @RequestParam(name = "id") int id) {
         return new Cliente(id, "Fulano", "123.456.789-00");
     }
 }
