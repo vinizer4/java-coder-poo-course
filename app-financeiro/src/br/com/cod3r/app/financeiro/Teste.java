@@ -9,6 +9,12 @@ public class Teste {
 
     public static void main(String[] args) {
 
+        Calc c1 = new CalcImpl1();
+        System.out.println(c1.soma(2, 3, 4));
+
+        Calc c2 = new CalcImpl2();
+        System.out.println(c2.soma(2, 3, 4));
+
         Calculadora calc = new Calculadora();
 
         System.out.println(calc.soma(2, 3, 4));
