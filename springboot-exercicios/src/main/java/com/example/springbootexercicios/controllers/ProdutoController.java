@@ -68,4 +68,10 @@ public class ProdutoController {
     public void excluirProduto(@PathVariable int id) {
         produtoRepository.deleteById(id);
     }
+
+    @GetMapping("/nome/{parteNome}")
+    public Iterable<Produto> obterProdutosPorNome(
+            @PathVariable String parteNome) {
+        return produtoRepository.findByNomeContainingIgnoreCase(parteNome);
+    }
 }
