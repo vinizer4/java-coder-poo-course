@@ -15,14 +15,14 @@ public class ProdutoController {
     @Autowired
     private ProdutoRepository produtoRepository;
 
-    @PostMapping
-    public @ResponseBody Produto novoProduto(
-            @Valid Produto produto) {
-
-        produtoRepository.save(produto);
-
-        return produto;
-    }
+//    @PostMapping
+//    public @ResponseBody Produto novoProduto(
+//            @Valid Produto produto) {
+//
+//        produtoRepository.save(produto);
+//
+//        return produto;
+//    }
 
     @GetMapping
     public Iterable<Produto> obterProdutos() {
@@ -34,8 +34,14 @@ public class ProdutoController {
         return produtoRepository.findById(id);
     }
 
-    @PutMapping
-    public Produto alterarProduto(@Valid Produto produto) {
+//    @PutMapping
+//    public Produto alterarProduto(@Valid Produto produto) {
+//        produtoRepository.save(produto);
+//        return produto;
+//    }
+
+    @RequestMapping(method = {RequestMethod.PATCH, RequestMethod.PUT})
+    public @ResponseBody Produto salvarProduto(@Valid Produto produto) {
         produtoRepository.save(produto);
         return produto;
     }
