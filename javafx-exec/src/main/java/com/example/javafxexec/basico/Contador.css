@@ -28,9 +28,9 @@
 }
 
 .verde {
-    -fx-background-color: #00ff00;
+    -fx-text-fill: #00ff00;
 }
 
 .vermelho {
-    -fx-background-color: #ff0000;
+    -fx-text-fill: #ff0000;
 }
